@@ -1,4 +1,30 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;font-family: Arial;color:white}
+h1{color:gray;font-family: Verdana}
+span{white-space: pre}
+
+.maindiv{
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;    
+}
+
+.dataDiv{
+    margin-left: 75px;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 120px 170px 30px;
+    align-items: center;
+    row-gap: 20px;   
+}
+
+
+.dataDiv select{
+    margin-right: 120px;
+}
+
+
 
 
