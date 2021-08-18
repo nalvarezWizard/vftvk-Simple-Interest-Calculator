@@ -19,11 +19,31 @@ function compute()
     //Convert the 'No of Years' into the actual year in the future.
     var year = new Date().getFullYear()+parseInt(years);
 
+    //Highlight the variables values of the output
+    var principalYellow = principal.replace(
+        principal,
+        `<mark class="highlight">${principal}</mark>`);
+
+    var rateYellow = rate.replace(
+        rate,
+        `<mark class="highlight">${rate}</mark>`);
+    
+    var interestStr = interest.toString();    
+    var interestYellow = interestStr.replace(
+        interestStr,
+        `<mark class="highlight">${interestStr}</mark>`);
+
+    var yearStr = year.toString();
+    var yearYellow = yearStr.replace(
+        yearStr,
+        `<mark class="highlight">${year}</mark>`);
+    
+    //Concatenate the result string
     var result_span = document.getElementById("result");
-    var resutlString = "If you deposit " +principal +",\n"
-    +"at an interest rate of " +rate +"%.\n" 
-    +"You will receive an amount of " +interest +", \n" 
-    +"in the year " +year;
+    var resutlString = "If you deposit " +principalYellow +",\n"
+    +"at an interest rate of " +rateYellow +"%.\n" 
+    +"You will receive an amount of " +interestYellow +", \n" 
+    +"in the year " +yearYellow;
 
     result_span.innerHTML = resutlString;
 }
