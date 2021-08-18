@@ -17,7 +17,7 @@ span{white-space: pre}
     display: grid;
     grid-template-columns: 120px 170px 30px;
     align-items: center;
-    row-gap: 20px;   
+    row-gap: 22px;   
 }
 
 
