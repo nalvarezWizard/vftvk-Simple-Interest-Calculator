@@ -43,7 +43,9 @@ function compute()
     var resutlString = "If you deposit " +principalYellow +",\n"
     +"at an interest rate of " +rateYellow +"%.\n" 
     +"You will receive an amount of " +interestYellow +", \n" 
-    +"in the year " +yearYellow;
+    +"in the year " +yearYellow; 
+   
+    
 
     result_span.innerHTML = resutlString;
 }
